@@ -11,6 +11,7 @@ COPY . .
 
 # Default Port 
 EXPOSE 6969
+ENV PYTHONPATH="/app/src"
 
 # Run Uvicorn server
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "6969"]
